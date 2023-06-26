@@ -1,0 +1,86 @@
+.typewriter {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    /* justify-content: center; */
+
+}
+
+.tw-head {
+    
+    font-size: 22px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    margin-top: 6px;
+    color:#eff;
+}
+#tw-span{
+    font-size: 22px;
+    color: #0ef;
+}
+
+.dynamic-texts {
+    margin-left: 15px;
+    overflow: hidden;
+
+}
+
+@keyframes slide {
+    100% {
+        top: -90px;
+    }
+}
+
+
+
+.dynamic-texts li {
+    font-size: 28px;
+    font-weight: 600;
+    color: #eff;
+    position: relative;
+    top: 0;
+    list-style: none;
+    animation: slide 6s steps(1) infinite;
+
+    /* here steps refer to how many li you have to move */
+
+
+}
+
+.dynamic-texts li span {
+    position: relative;
+    text-decoration: none;
+    margin: 5px 0;
+    line-height: 40px;
+    background-color: rgba(19, 46, 70, 0.97) ;
+
+}
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+
+.dynamic-texts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: inherit;
+    height: 100%;
+
+    width: 100%;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 6s steps(16) infinite;
+
+
+}
