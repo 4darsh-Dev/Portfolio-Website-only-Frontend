@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -23,10 +25,11 @@ nav{
 .main-bg-2{
     /* background-color: rgba(34, 44, 136, 0.969); */
     background-color: rgba(19, 46, 70, 0.97);
+    /* background-color: #081b29; */
 }
 .container{
     width: 100%;
-    height: 100vh;
+    height: auto;
 
 }
 
@@ -43,7 +46,7 @@ nav{
     font-weight: 600;
     text-decoration: none;
     color: #fff;
-    margin: 13px 24px;
+    margin: 13px 20px ;
 }
 .menu-list li a:hover{
     color: #0ef;
@@ -60,6 +63,7 @@ body{
     margin: 12px 6vw;
     padding: 6px;
     display: inline-block;
+    
 }
 
 .sub-box{
@@ -73,7 +77,7 @@ body{
 }
 .s-box-1{
     width: 50vw;
-    height: 100vh;
+    height: auto;
     /* background-color: blue; */
     
 }
@@ -90,6 +94,17 @@ body{
    
 
 }
+.s-box-1-ins h3 span{
+    font-size: 22px;
+    color: #0ef;
+   
+
+}
+.s-box-1-ins h3:nth-of-type(2){
+    margin-bottom: 20px;
+
+}
+
 .s-box-2{
     width: 50vw;
     height: 100vh;
@@ -97,9 +112,17 @@ body{
 
 }
 .prof-img{
-    width: 30vw;
+    max-width: 30vw;
+    width: 100%;
+    border-radius: 50%;
+    border: 8px solid #0ef;
     height: auto;
-    padding: 5vw;
+    /* padding: 5vw; */
+    position: relative;
+    top: 15vh;
+    left: 8vw;
+    box-shadow: 0 0 12rem #0ef;
+
 }
 
 .contact-links {
@@ -147,4 +170,341 @@ body{
 }
 .btn-box:hover{
     box-shadow: 0 0 20px #0ef;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    color: #fff;
+    padding-bottom: 10%;
+
+
+}
+.about-img img{
+    max-width: 20rem;
+    width: 100%;
+    height: auto;
+    /* padding-bottom: 20%; */
+    border-radius: 8px;
+    position: relative;
+    top: 2rem;
+    left: 5rem;
+
+    border-radius: 50%;
+    border: 8px solid #0ef;
+    box-shadow: 0 0 12rem #0ef;
+    
+
+}
+
+.font-head{
+    font-family: Montserrat,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+.about-text h2{
+    font-size: 52px;
+    
+
+}
+.about-text h2 span{
+    color: #0ef;
+}
+.about-text h4{
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+
+
+}
+.about-text p{
+    font-family: sans-serif ,monospace;
+    font-size: 16px;
+    letter-spacing: 1.5;
+    line-height: 1.5;
+    color: aliceblue;
+}
+
+.s-container{
+    padding: 90px;
+
+}
+
+#services{
+    color: aliceblue;
+    font-size: 18px;
+    line-height: 1.4rem;
+    margin-bottom: 4rem;
+    
+}
+
+.sub-title{
+    text-align: center;
+    font-size: 52px;
+    padding-bottom: 70px;
+    color: #fff;
+
+}
+
+.sub-title span{
+    color: #0ef;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 16px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7;
+
+}
+
+.services-list div i{
+    font-size: 46px;
+    margin-bottom: 30px;
+    
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+
+
+.read{
+    color: #000000;
+    
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    /* opacity: 0; */
+    box-shadow: 0 0 5px #0ef;
+
+}
+.read:hover{
+    box-shadow: 0 0 20px #0ef;
+
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-container{
+    width: 40vw;
+    height: 500px;
+    padding: 2rem;
+    margin-left: 3rem;
+
+}
+
+.heading1{
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
+    margin-bottom: 50px;
+
+}
+.bar{
+    font-size: 25px;
+
+}
+.technical-bars .bar{
+    margin-top: 40px 0;
+
+}
+
+.technical-bars .bar:first-child{
+    margin-top: 0;
+}
+.technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+
+.technical-bars .bar .info{
+    margin-bottom: 5px;
+
+}
+
+.technical-bars .bar .info span{
+    font-size: 16px;
+    font-weight: 500;
+    /* opacity: 0; */
+    color: #fff;
+
+}
+
+.technical-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+
+}
+
+.technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    
+}
+.progress-line .html span{
+    width: 85%;
+}
+.progress-line .css span{
+    width: 60%;
+}
+.progress-line .JavaScript span{
+    width: 55%;
+}
+.progress-line .Django span{
+    width: 45%;
+}
+.progress-line .C span{
+    width: 65%;
+}
+.progress-line .Python span{
+    width: 50%;
+}
+
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+
+}
+
+.progress-line .html span::after{
+    content: 85%;
+}
+.progress-line .css span::after{
+    content: 60%;
+}
+.progress-line .JavaScript span::after{
+    content: 55%;
+}
+.progress-line .Django span::after{
+    content: 45%;
+}
+.progress-line .C span::after{
+    content: 65%;
+}
+.progress-line .Python span::after{
+    content: 50%;
+}
+
+.progress-line span::before{
+    position: absolute;
+    content:"";
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000000;
+    top: -10px;
+    right: 0;
+
+}
+
+.radial-bars{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.radial-bars .radial-bar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+
+}
+
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%), rotate(-90deg);
+    width: 120px;
+    height: 160px;
+
+
+}
+
+
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stop-color: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+
+
+}
+
+.path{
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.radial-bar .percentage{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.radial-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50px);
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
 }
