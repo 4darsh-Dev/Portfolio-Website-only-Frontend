@@ -20,7 +20,7 @@
     font-size: 22px;
     color: #0ef;
 }
-
+/* 
 .dynamic-texts {
     margin-left: 15px;
     overflow: hidden;
@@ -42,14 +42,14 @@
     position: relative;
     top: 0;
     list-style: none;
-    animation: slide 6s steps(1) infinite;
+    /* animation: slide 6s steps(1) infinite; */
 
     /* here steps refer to how many li you have to move */
 
 
-}
 
-.dynamic-texts li span {
+
+/* .dynamic-texts li span {
     position: relative;
     text-decoration: none;
     margin: 5px 0;
@@ -83,4 +83,113 @@
     animation: typing 6s steps(16) infinite;
 
 
+} */ 
+
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.logo{
+    animation: slideRight 1s ease forwards;
+}
+
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+
+}
+
+.technical-bars .bar .progress-line{
+    animation: animate 1s cubic-bezier(1,0,  0.5, 1) forwards;
+    transform: scale(0);
+    transform-origin: left;
+    
+}
+
+.technical-bars .bar .progress-line span{
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5 , 1) forwards;
+    transform: scale(0);
+    transform-origin: left;
+
+}
+
+@keyframes showText{
+    100%{
+        opacity: 1;
+
+    }
+}
+
+.progress-line span::after{
+    animation: showText  0.5s 1.5s linear forwards;
+    /* opacity: 0; */
+    
+}
+
+.progress-line span::before{
+    animation: showText  0.5s 1.5s linear forwards;
+    /* opacity: 0; */
+
+}
+
+@keyframes animate-bar{
+    100%{
+        stroke-dashoffset: -1;
+
+    }
+}
+.radial-bars .radial-bar .progress-bar{
+    animation: animate-bar 1s linear forwards;
+
+
+}
+
+@keyframes animate-path1 {
+    100%{
+        stroke-dashoffset: 50;
+    }
+    
+}
+@keyframes animate-path2 {
+    100%{
+        stroke-dashoffset: 175;
+    }
+    
+}
+@keyframes animate-path3 {
+    100%{
+        stroke-dashoffset: 125;
+    }
+    
+}
+@keyframes animate-path4 {
+    100%{
+        stroke-dashoffset: 75;
+    }
+    
+}
+
+
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path1 1s 1s linear forwards;}
+.path-3{animation: animate-path1 1s 1s linear forwards;}
+.path-4{animation: animate-path1 1s 1s linear forwards;}
+
+.radial-bar .percentage{
+    animation: showText 0.5s 1s linear forwards;
+    /* opacity: 0; */
+
+}
+
+.radial-bar .text{
+    animation: showText 0.5s 1s linear forwards;
+    /* opacity: 0; */
 }
