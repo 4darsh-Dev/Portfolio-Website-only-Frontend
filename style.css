@@ -1,3 +1,5 @@
+/* Developer --> Adarsh Maurya */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *{
@@ -151,11 +153,14 @@ body{
     text-decoration: none;
     margin: 6px 15px 6px 0;
 }
-.contact-links a:hover{
+.contact-links a:hover {
     background: #0ef;
     color:#081b29;
     box-shadow: 0 0 20px #0ef;
+    transform: scale(1.01) translateY(-4px);
 }
+
+
 .btn-box{
     display: inline-block;
     padding: 12px 28px;
@@ -245,7 +250,7 @@ body{
 .sub-title{
     text-align: center;
     font-size: 52px;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
     color: #fff;
 
 }
@@ -314,10 +319,10 @@ section{
 }
 
 .skill-container{
-    width: 40vw;
+    width: 30vw;
     height: 500px;
-    padding: 2rem;
-    margin-left: 3rem;
+    padding: 75px 90px;
+    margin-left: 4rem;
 
 }
 
@@ -351,10 +356,16 @@ section{
 
 }
 
+.div-py{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
 .technical-bars .bar .info span{
     font-size: 16px;
-    font-weight: 500;
-    /* opacity: 0; */
+    font-weight: 600;
+    opacity: 0;
     color: #fff;
 
 }
@@ -368,29 +379,35 @@ section{
 
 }
 
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
 .technical-bars .bar .progress-line span{
     height: 100%;
-    background-color: #0ef;
+    background: #0ef;
     position: absolute;
     border-radius: 10px;
     
+    
 }
-.progress-line .html span{
+.progress-line.html span{
     width: 85%;
 }
-.progress-line .css span{
+.progress-line.css span{
     width: 60%;
 }
-.progress-line .JavaScript span{
+.progress-line.JavaScript span{
     width: 55%;
 }
-.progress-line .Django span{
+.progress-line.Django span{
     width: 45%;
 }
-.progress-line .C span{
+.progress-line.C span{
     width: 65%;
 }
-.progress-line .Python span{
+.progress-line.Python span{
     width: 50%;
 }
 
@@ -406,23 +423,23 @@ section{
 
 }
 
-.progress-line .html span::after{
-    content: 85%;
+.progress-line.html span::after{
+    content: "85%";
 }
-.progress-line .css span::after{
-    content: 60%;
+.progress-line.css span::after{
+    content: "60%";
 }
-.progress-line .JavaScript span::after{
-    content: 55%;
+.progress-line.JavaScript span::after{
+    content: "55%";
 }
-.progress-line .Django span::after{
-    content: 45%;
+.progress-line.Django span::after{
+    content: "45%";
 }
-.progress-line .C span::after{
-    content: 65%;
+.progress-line.C span::after{
+    content: "65%";
 }
-.progress-line .Python span::after{
-    content: 50%;
+.progress-line.Python span::after{
+    content: "50%";
 }
 
 .progress-line span::before{
@@ -457,8 +474,8 @@ section{
 
 .radial-bars .radial-bar svg{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 2%;
+    left: 18%;
     transform: translate(-50%, -50%), rotate(-90deg);
     width: 120px;
     height: 160px;
@@ -501,10 +518,287 @@ section{
     width: 100%;
     position: absolute;
     text-align: center;
-    left: 50%;
-    bottom: -5px;
+    left: 26%;
+    bottom: 6px;
     transform: translateX(-50px);
     font-size: 16px;
     font-weight: 500;
     color: #fff;
+    font-family: sans-serif, monospace;
+    /* font-weight: 600; */
+}
+
+.main-text{
+    padding-top: 50px;
+    margin-top: 50px;
+
+}
+
+.main-text h2{
+    font-size: 52px;
+    line-height: 1px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 120px;
+
+}
+.main-text h2 span{
+    color: #0ef;
+}
+
+.portfolio{
+    width: 100%;
+}
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+    grid-gap: 20px;
+    padding: 0 40px;
+
+}
+
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.row img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:0 10px;
+    transition: height 0.5s;
+}
+
+.layer h5{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+}
+
+.layer p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.6;
+
+}
+
+.layer i{
+    color: #ff004f;
+    margin-top: 20px;
+    font-size: 25px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+
+.row:hover img{
+    transform: scale(1.1);
+
+}
+
+.row:hover .layer{
+    height: 100%;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+
+}
+
+.contact-text h2{
+    font-size: 52px;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+
+}
+
+.contact-text h2 span{
+    color: #0ef;
+}
+
+.contact-text h4{
+    margin: 15px 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.contact-text p{
+    font-size: 16px;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+.contact-list{
+    margin-bottom: 3rem;
+
+}
+.contact-list ul{
+    list-style-type: none;
+    color: #fff;
+}
+.contact-list li{
+    margin-bottom: 10px;
+
+}
+
+/* .contact-links i{
+    display: inline-block;
+    color: #0ef;
+    font-size: 20px;
+    transition: all 0.40s ease;
+    font-weight: 600;
+
+} */
+.contact a:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: #081b29;
+
+}
+
+.contact-icons ul{
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-icons  i{
+  
+    width: 40px;
+    height: 40px;
+    background:transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: 0.5s ease;
+    /* opacity: 0; */
+    
+}
+
+.contact-icons i:hover{
+    background-color: #0ef;
+    color: #000000;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.contact-form form{
+    position: relative;
+}
+
+.contact-form form input, form textarea{
+    border: none;
+    outline: none;
+    width: 80%;
+    padding: 14px;
+    background: #555557;
+    color: #ff9494;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+
+
+
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 120px;
+
+}
+
+.contact-form form .send{
+    color: #000000;
+    
+    margin-top: 20px;
+    display: inline-block;
+    padding: 14px 60px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    /* opacity: 0; */
+    box-shadow: 0 0 5px #0ef;
+
+}
+
+.contact-form form .send:hover{
+    box-shadow: 0 0 10px #0ef;
+
+}
+
+.last-text p{
+    width: 100%;
+    text-align: center;
+    padding:25px 0;
+    /* background: rgb(7, 85, 91); */
+    font-weight: 500;
+    margin-top: 70px;
+    letter-spacing: 1.5px;
+    color: #fff;
+
+
+}
+.top{
+    position: fixed;
+    right: 2.2rem;
+    bottom: 2.2rem;
+}
+
+.top i{
+    color: #000000;
+    background: #0ef;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+
+}
+
+#heart{
+    color: #ff004f;
 }
