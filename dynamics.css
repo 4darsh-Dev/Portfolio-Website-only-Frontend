@@ -1,3 +1,5 @@
+/* Developer --> Adarsh Maurya */
+
 .typewriter {
     width: 100%;
     height: 40px;
@@ -109,17 +111,16 @@
 
 .technical-bars .bar .progress-line{
     animation: animate 1s cubic-bezier(1,0,  0.5, 1) forwards;
-    transform: scale(0);
+    transform: scaleX(0);
     transform-origin: left;
     
 }
-
 .technical-bars .bar .progress-line span{
     animation: animate 1s 1s cubic-bezier(1, 0, 0.5 , 1) forwards;
-    transform: scale(0);
+    transform: scaleX(0);
     transform-origin: left;
 
-}
+} 
 
 @keyframes showText{
     100%{
@@ -128,15 +129,20 @@
     }
 }
 
+.technical-bars .bar .info span{
+    animation: showText 0.5s 1.5s linear forwards;
+    /* animation: slideRight 1s ease forwards; */
+}
+
 .progress-line span::after{
     animation: showText  0.5s 1.5s linear forwards;
-    /* opacity: 0; */
+    opacity: 0;
     
 }
 
 .progress-line span::before{
     animation: showText  0.5s 1.5s linear forwards;
-    /* opacity: 0; */
+    opacity: 0;
 
 }
 
@@ -179,17 +185,22 @@
 
 
 .path-1{animation: animate-path1 1s 1s linear forwards;}
-.path-2{animation: animate-path1 1s 1s linear forwards;}
-.path-3{animation: animate-path1 1s 1s linear forwards;}
-.path-4{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1s linear forwards;}
+.path-3{animation: animate-path3 1s 1s linear forwards;}
+.path-4{animation: animate-path4 1s 1s linear forwards;}
 
 .radial-bar .percentage{
     animation: showText 0.5s 1s linear forwards;
-    /* opacity: 0; */
+    opacity: 0;
 
 }
 
 .radial-bar .text{
     animation: showText 0.5s 1s linear forwards;
-    /* opacity: 0; */
+    opacity: 0;
 }
+
+/* .contact-icons i{
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+} */
