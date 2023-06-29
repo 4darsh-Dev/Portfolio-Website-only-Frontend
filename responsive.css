@@ -1,0 +1,122 @@
+@media only screen and (max-width:1240px) and (min-width: 901px) {
+    .me{
+        color: aliceblue;
+    }
+
+    .prof-img{
+        max-width: 35vw;
+
+    }
+    .about-text h2{
+        font-size: 42px;
+
+    }
+    .about-text h4{
+        font-size: 26px;
+
+    }
+    .sub-title{
+        font-size: 42px;
+    }
+    .main-text h2{
+        font-size: 42px;
+
+    }
+    .contact-text h2{
+        font-size: 42px;
+    }
+
+    .skill-container{
+        padding: 3vw 6vw;
+    }
+
+
+}
+
+
+@media only screen and (max-width:900px) and (min-width: 480px) {
+    .me{
+        color: aliceblue;
+    }
+    .prof-img{
+        max-width: 35vw;
+
+    }
+
+    .about-img img{
+        width: 15rem;
+        left: 20px;
+    }
+    .about-text h2{
+        font-size: 42px;
+
+    }
+    .about-text h4{
+        font-size: 26px;
+
+    }
+    .about-text p{
+        font-size: 15px;
+
+    }
+
+    .sub-title{
+        font-size: 42px;
+    }
+    .main-text h2{
+        font-size: 42px;
+
+    }
+    .contact-text h2{
+        font-size: 42px;
+    }
+
+    .skill-container{
+        padding: 3vw 3vw;
+        width: 37vw;
+        margin-left: 2rem;
+    }
+    .s-box-1-ins{
+        padding: 18vw 6vw;
+    }
+
+    .about{
+        grid-gap: 0.5rem;
+    }
+    .about-text p{
+        font-size: 14px;
+
+    }
+
+    .radial-bar .text{
+        left: 49%;
+
+    }
+    .radial-bar .percentage{
+        left: 60%;
+
+    }
+
+    .portfolio-content{
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    }
+
+    .contact-text p{
+        font-size: 15px;
+
+    }
+
+    .s-box-2{
+        height: 700px;
+    }
+    
+
+
+}
+@media only screen and (max-width:480px) and (min-width: 320px) {
+    .me{
+        color: aliceblue;
+    }
+
+    
+}
