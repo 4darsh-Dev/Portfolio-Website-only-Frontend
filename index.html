@@ -317,12 +317,12 @@
 
                 </div>
 
-                <div class="contact-form">
-                    <form action="#">
-                        <input type="text" placeholder="Enter your name" required>
-                        <input type="email" placeholder="Enter your email" required>
+                <div  class="contact-form">
+                    <form name="contact" method="POST" netlify action="#">
+                        <input name="name" type="text" placeholder="Enter your name" required>
+                        <input name="email" type="email" placeholder="Enter your email" required>
 
-                        <input type="text" placeholder="Subject" required>
+                        <input name="subject" type="text" placeholder="Subject" required>
                         <textarea name="message" id="message" cols="40" rows="10" placeholder="Description"></textarea>
 
                         <input type="submit" value="Submit" class="send">
