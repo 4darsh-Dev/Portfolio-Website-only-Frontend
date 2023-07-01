@@ -17,8 +17,11 @@
 header{
     height:4rem;
 }
-nav{
-    height: 100%;
+#my-nav{
+    width: 100%;
+    /* position: fixed;
+    z-index: 999; */
+  
 
 }
 .main-bg-1{
@@ -32,6 +35,22 @@ nav{
 .container{
     width: 100%;
     height: auto;
+
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
 
 }
 
@@ -603,6 +622,7 @@ section{
     color: #fff;
     font-size: 15px;
     line-height: 1.6;
+    font-family: sans-serif, monospace;
 
 }
 
@@ -636,6 +656,7 @@ section{
     gap: 3rem;
     padding-left: 30px;
     margin-top: 130px;
+    padding-bottom: 70px;
 
 }
 
@@ -764,6 +785,7 @@ section{
     font-weight: 600;
     /* opacity: 0; */
     box-shadow: 0 0 5px #0ef;
+    margin: 12px 12px;
 
 }
 
@@ -778,7 +800,7 @@ section{
     padding:25px 0;
     /* background: rgb(7, 85, 91); */
     font-weight: 500;
-    margin-top: 70px;
+    margin-top: 0px;
     letter-spacing: 1.5px;
     color: #fff;
 
@@ -802,3 +824,4 @@ section{
 #heart{
     color: #ff004f;
 }
+
