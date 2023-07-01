@@ -1,4 +1,4 @@
-@media only screen and (max-width:1240px) and (min-width: 901px) {
+@media only screen and (max-width:1220px) and (min-width: 901px) {
     .me{
         color: aliceblue;
     }
@@ -29,7 +29,13 @@
     .skill-container{
         padding: 3vw 6vw;
     }
+    .contact-form form .send{
+        margin: 6px 12px;
+    }
 
+    .menu-list{
+        left: 15vw;
+    }
 
 }
 
@@ -40,6 +46,7 @@
     }
     .prof-img{
         max-width: 35vw;
+        top: 8vh;
 
     }
 
@@ -57,6 +64,7 @@
     }
     .about-text p{
         font-size: 15px;
+        padding: 0 12px;
 
     }
 
@@ -77,7 +85,7 @@
         margin-left: 2rem;
     }
     .s-box-1-ins{
-        padding: 18vw 6vw;
+        padding: 12vw 4vw;
     }
 
     .about{
@@ -107,16 +115,295 @@
     }
 
     .s-box-2{
-        height: 700px;
+        height: 650px;
+    }
+
+    .menu-list{
+        left: 7rem;
+
+    }
+    .menu-list li a{
+        margin: 13px;
+        font-size: 17px;
+
+    }
+
+    .logo{
+        margin: 12px 3vw;
+        padding:6px;
+
+    }
+    .contact-form form .send{
+        margin: 6px 12px;
     }
     
 
 
 }
-@media only screen and (max-width:480px) and (min-width: 320px) {
+@media only screen and (max-width:480px) and (min-width: 300px) {
     .me{
         color: aliceblue;
     }
 
+    .logo{
+        padding: 12px 0vw;
+        margin: 6px 5vw;
+    }
+
+    .checkbtn{
+        display: block;
+
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(19, 46, 70, 0.97);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition:  all 0.5s ;
+
+
+    }
+    nav ul li{
+        display: block;
+        margin: 15px 0;
+        line-height: 30px;
+    }
     
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    nav ul li a:hover, a.active{
+        color: #0ef;
+    }
+
+    #check:checked ~ ul{
+        z-index: 999;
+        left: 0;
+        top: 0;
+
+    }
+    .menu-list{
+        flex-direction: column;
+        left: 28rem;
+    }
+
+    /* .menu-list{
+        left: 0px;
+    } */
+
+
+    .prof-img{
+        max-width: 35vw;
+        border: 4px solid #0ef;
+        top :9vh;
+        left: 0vw;
+        box-shadow: 0 0 6rem #0ef;
+
+    }
+
+    .about-img img{
+        width: 15rem;
+        left: 20px;
+    }
+    .about-text h2{
+        font-size: 42px;
+
+    }
+    .about-text h4{
+        font-size: 26px;
+
+    }
+    .about-text p{
+        font-size: 15px;
+
+    }
+
+    .sub-title{
+        font-size: 32px;
+    }
+    .main-text h2{
+        font-size: 42px;
+
+    }
+    .contact-text h2{
+        font-size: 42px;
+    }
+
+    .skill-container{
+        padding: 3vw 3vw;
+        width: 37vw;
+        margin-left: 2rem;
+    }
+    .s-box-1-ins{
+        padding: 18vw 3vw;
+    }
+
+    .s-box-1-ins h3{
+        font-size: 16px;
+
+    }
+    .s-box-1-ins h3 span{
+        font-size: 16px;
+
+    }
+    .s-box-1-ins h1{
+        font-size: 22px;
+    }
+
+    .about{
+        grid-gap: 0.5rem;
+    }
+    
+
+    .radial-bar .text{
+        left: 49%;
+
+    }
+    .radial-bar .percentage{
+        left: 60%;
+
+    }
+
+    .portfolio-content{
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    }
+
+    .contact-text p{
+        font-size: 15px;
+
+    }
+
+    .s-box-2{
+        height: 400px;
+    }
+
+    .contact-links{
+        width: 250px;
+        height: 48px;
+
+    }
+    .contact-links a{
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+
+    }
+    .btn-box{
+        padding: 12px;
+        font-size: 14px;
+        margin-left: 12px;
+    }
+
+    .about{
+        display: inline-block;
+
+    }
+    .about-img{
+        display: none;
+
+    }
+    .about-text h2 {
+        font-size: 32px;
+        text-align: center;
+
+    }
+
+    .about-text h4{
+        font-size: 18px;
+        text-align: center;
+        margin: 15px 0 15px;
+
+    }
+
+    .about-text p{
+        font-size: 15px;
+        padding: 0 18px;
+
+    }
+
+    .s-container{
+        padding: 20px;
+    }
+    
+    .skill-container{
+        padding: 3vw 0vw;
+        width: 80vw;
+
+    }
+    
+    .heading1{
+        font-size: 20px;
+        margin-bottom: 25px;
+
+    }
+    .radial-bars .radial-bar svg{
+        left: 5%;
+
+    }
+
+    .radial-bar .percentage{
+        left: 49%;
+
+    }
+    .radial-bar .text{
+        left: 32%;
+
+    }
+    .main-text{
+        padding-top: 20px;
+        margin-top: 20px;
+
+    }
+    .main-text h2{
+        font-size: 32px;
+
+    }
+
+    .portfolio-content{
+        padding: 0 20px;
+
+    }
+
+    .contact-text h2{
+        font-size: 32px;
+
+    }
+
+    .contact-text h4{
+        font-size: 18px;
+        padding: 0 12px;
+
+    }
+    .contact-text p{
+        padding: 0 12px;
+        
+
+    }
+
+    .contact{
+        display: inline-block;
+        margin-bottom: 70px;
+
+    }
+
+    .contact-form form .send{
+        margin: 6px 12px;
+    }
+
+    .last-text{
+        padding: 0 6px;
+    }
+
+    .last-text p{
+        margin-top: 0px;
+    }
+
+    .services-list div{
+        padding: 25px;
+    }
+
 }
