@@ -188,7 +188,8 @@
     }
     .menu-list{
         flex-direction: column;
-        left: 28rem;
+        right: -100%;
+        
     }
 
     /* .menu-list{
@@ -224,6 +225,7 @@
 
     .sub-title{
         font-size: 32px;
+        margin-top: 70px;
     }
     .main-text h2{
         font-size: 42px;
