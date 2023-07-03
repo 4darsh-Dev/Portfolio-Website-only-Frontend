@@ -188,7 +188,7 @@
     }
     .menu-list{
         flex-direction: column;
-        right: -100%;
+        left: -100%;
         
     }
 
