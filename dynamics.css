@@ -1,206 +1,110 @@
-/* Developer --> Adarsh Maurya */
-
 .typewriter {
-    width: 100%;
-    height: 40px;
-    margin-bottom: 20px;
-    display: flex;
-    /* justify-content: center; */
-
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  display: flex;
 }
-
 .tw-head {
-    
-    font-size: 22px;
-    font-weight: 600;
-    display: inline-block;
-    text-align: center;
-    margin-top: 6px;
-    color:#eff;
+  font-size: 22px;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  margin-top: 6px;
+  color: #eff;
 }
-#tw-span{
-    font-size: 22px;
-    color: #0ef;
+#tw-span {
+  font-size: 22px;
+  color: #0ef;
 }
-/* 
-.dynamic-texts {
-    margin-left: 15px;
-    overflow: hidden;
-
-}
-
-@keyframes slide {
-    100% {
-        top: -90px;
-    }
-}
-
-
-
-.dynamic-texts li {
-    font-size: 28px;
-    font-weight: 600;
-    color: #eff;
-    position: relative;
-    top: 0;
-    list-style: none;
-    /* animation: slide 6s steps(1) infinite; */
-
-    /* here steps refer to how many li you have to move */
-
-
-
-
-/* .dynamic-texts li span {
-    position: relative;
-    text-decoration: none;
-    margin: 5px 0;
-    line-height: 40px;
-    background-color: rgba(19, 46, 70, 0.97) ;
-
-}
-
-@keyframes typing {
-
-    40%,
-    60% {
-        left: calc(100% + 30px);
-    }
-
-    100% {
-        left: 0;
-    }
-}
-
-
-.dynamic-texts li span::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    background: inherit;
-    height: 100%;
-
-    width: 100%;
-    border-left: 2px solid #FC6D6D;
-    animation: typing 6s steps(16) infinite;
-
-
-} */ 
-
-
-@keyframes slideRight{
-    0%{
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-.logo{
-    animation: slideRight 1s ease forwards;
-}
-
-@keyframes animate{
-    100%{
-        transform: scaleX(1);
-    }
-
-}
-
-.technical-bars .bar .progress-line{
-    animation: animate 1s cubic-bezier(1,0,  0.5, 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-    
-}
-.technical-bars .bar .progress-line span{
-    animation: animate 1s 1s cubic-bezier(1, 0, 0.5 , 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-
-} 
-
-@keyframes showText{
-    100%{
-        opacity: 1;
-
-    }
-}
-
-.technical-bars .bar .info span{
-    animation: showText 0.5s 1.5s linear forwards;
-    /* animation: slideRight 1s ease forwards; */
-}
-
-.progress-line span::after{
-    animation: showText  0.5s 1.5s linear forwards;
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
     opacity: 0;
-    
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
-
-.progress-line span::before{
-    animation: showText  0.5s 1.5s linear forwards;
-    opacity: 0;
-
+.logo {
+  animation: slideRight 1s ease forwards;
 }
-
-@keyframes animate-bar{
-    100%{
-        stroke-dashoffset: -1;
-
-    }
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
 }
-.radial-bars .radial-bar .progress-bar{
-    animation: animate-bar 1s linear forwards;
-
-
+.technical-bars .bar .progress-line {
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
 }
-
+.technical-bars .bar .progress-line span {
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+.technical-bars .bar .info span {
+  animation: showText 0.5s 1.5s linear forwards;
+}
+.progress-line span::after {
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+.progress-line span::before {
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+@keyframes animate-bar {
+  100% {
+    stroke-dashoffset: -1;
+  }
+}
+.radial-bars .radial-bar .progress-bar {
+  animation: animate-bar 1s linear forwards;
+}
 @keyframes animate-path1 {
-    100%{
-        stroke-dashoffset: 50;
-    }
-    
+  100% {
+    stroke-dashoffset: 50;
+  }
 }
 @keyframes animate-path2 {
-    100%{
-        stroke-dashoffset: 175;
-    }
-    
+  100% {
+    stroke-dashoffset: 175;
+  }
 }
 @keyframes animate-path3 {
-    100%{
-        stroke-dashoffset: 125;
-    }
-    
+  100% {
+    stroke-dashoffset: 125;
+  }
 }
 @keyframes animate-path4 {
-    100%{
-        stroke-dashoffset: 75;
-    }
-    
+  100% {
+    stroke-dashoffset: 75;
+  }
 }
-
-
-.path-1{animation: animate-path1 1s 1s linear forwards;}
-.path-2{animation: animate-path2 1s 1s linear forwards;}
-.path-3{animation: animate-path3 1s 1s linear forwards;}
-.path-4{animation: animate-path4 1s 1s linear forwards;}
-
-.radial-bar .percentage{
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
-
+.path-1 {
+  animation: animate-path1 1s 1s linear forwards;
 }
-
-.radial-bar .text{
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
+.path-2 {
+  animation: animate-path2 1s 1s linear forwards;
 }
-
-/* .contact-icons i{
-    animation: slideLeft 1s ease forwards;
-    animation-delay: calc(0.2s * var(--i));
-} */
+.path-3 {
+  animation: animate-path3 1s 1s linear forwards;
+}
+.path-4 {
+  animation: animate-path4 1s 1s linear forwards;
+}
+.radial-bar .percentage {
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+.radial-bar .text {
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
