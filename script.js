@@ -20,3 +20,38 @@ let menuBtn = document.getElementById("check");
 menuBtn.addEventListener("click", menuBtnChanger);
 
 
+// project section ux js
+document.addEventListener("DOMContentLoaded", function() {
+  const projectCards = document.querySelectorAll(".project-card");
+
+  // Add event listeners to project cards
+  projectCards.forEach(card => {
+    card.addEventListener("mouseenter", function() {
+      this.classList.add("hovered");
+    });
+
+    card.addEventListener("mouseleave", function() {
+      this.classList.remove("hovered");
+    });
+  });
+});
+
+
+// certifcates section ux js
+
+document.addEventListener("DOMContentLoaded", function() {
+  const certificationCards = document.querySelectorAll(".certification-card");
+
+  // Add event listeners to certification cards
+  certificationCards.forEach(card => {
+    card.addEventListener("mouseenter", function() {
+      this.classList.add("hovered");
+    });
+
+    card.addEventListener("mouseleave", function() {
+      this.classList.remove("hovered");
+    });
+  });
+});
+
+
