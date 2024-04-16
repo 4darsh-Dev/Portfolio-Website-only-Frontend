@@ -2,7 +2,7 @@ console.log("I am working! ");
 const author = "Adarsh Maurya!";
 console.log(`Developer ${author}`);
 var typed = new Typed(".dynamic-txt", {
-  strings: ["Web Developer!", "Programmer!", "Blogger!"],
+  strings: ["Web Developer!",  "Programmer!", "Entrepreneur!"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1e3,
@@ -52,6 +52,31 @@ document.addEventListener("DOMContentLoaded", function() {
       this.classList.remove("hovered");
     });
   });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const image = document.querySelector(".about-img img");
+
+  // Function to add bouncing class to the image
+  function startBouncing() {
+    image.classList.add("bouncing");
+  }
+
+  // Function to remove bouncing class from the image
+  function stopBouncing() {
+    image.classList.remove("bouncing");
+  }
+
+  // Start bouncing animation when the page loads
+  startBouncing();
+
+  // Continuously toggle bouncing animation
+  setInterval(function() {
+    stopBouncing();
+    setTimeout(startBouncing, 50); // Wait for a short delay before starting again
+  }, 2000); // Adjust the delay based on the duration of the animation (2s in this case)
 });
 
 

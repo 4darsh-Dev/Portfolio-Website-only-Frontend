@@ -85,6 +85,7 @@ header {
 }
 .menu-list li a:hover {
   color: var(--blue);
+  border-bottom: 2px solid var(--blue);
 }
 body {
   background-color: var(--white);
@@ -112,12 +113,13 @@ body {
   /* background-color: blue; */
 }
 .s-box-1-ins {
-  padding: 12vw 6vw;
+  padding: 10vw 6vw;
   color: var(--black);
 }
 .s-box-1-ins h1 {
-  font-size: 34px;
-  font-family: sans-serif, monospace;
+  font-size: 42px;
+  font-family: var(--sans);
+  /* font-weight: 600; */
 }
 .s-box-1-ins h3 {
   font-size: 22px;
@@ -128,6 +130,7 @@ body {
 }
 .s-box-1-ins h3:nth-of-type(2) {
   margin-bottom: 20px;
+  font-family: var(--mono-head);
 }
 
 .s-box-2 {
@@ -136,16 +139,16 @@ body {
   /* background-color: greenyellow; */
 }
 .prof-img {
-  max-width: 30vw;
+  max-width: 40vw;
   width: 100%;
-  border-radius: 50%;
-  border: 8px solid var(--blue);
+  /* border-radius: 50%; */
+  /* border: 8px solid var(--blue); */
   height: auto;
   /* padding: 5vw; */
   position: relative;
-  top: 15vh;
+  top: 0vh;
   left: 8vw;
-  box-shadow: 0 0 12rem var(--blue);
+  /* box-shadow: 0 0 12rem var(--blue); */
 }
 
 .contact-links {
@@ -202,8 +205,10 @@ body {
   color: var(--black);
   padding-bottom: 10%;
 }
+
+
 .about-img img {
-  max-width: 20rem;
+  max-width: 22rem;
   width: 100%;
   height: auto;
   /* padding-bottom: 20%; */
@@ -211,31 +216,38 @@ body {
   position: relative;
   top: 2rem;
   left: 5rem;
-
+  
   border-radius: 50%;
-  border: 8px solid var(--blue);
-  box-shadow: 0 0 12rem var(--blue);
+  /* box-shadow: 0 0 12rem var(--blue); */
 }
 
 .font-head {
   font-family: Montserrat, "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
 }
+.font-head span{
+  color: var(--blue);
+
+}
 #about {
   margin-top: 70px;
 }
+.about-text{
+  padding-right: 55px;
 
+}
 .about-text h2 {
-  font-size: 52px;
+  font-size: 2.5rem;
 }
 .about-text h2 span {
   color: var(--blue);
 }
 .about-text h4 {
-  font-size: 29px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 1.7;
   margin: 15px 0 30px;
+  font-family: var(--mono-head);
 }
 .about-text p {
   font-family: sans-serif, monospace;
@@ -258,9 +270,9 @@ body {
 
 .sub-title {
   text-align: center;
-  font-size: 52px;
+  font-size: 2.5rem;
   padding-bottom: 20px;
-  color: var(--white);
+  color: var(--black);
 }
 
 .sub-title span {
@@ -519,7 +531,7 @@ section {
 }
 
 .main-text h2 {
-  font-size: 52px;
+  font-size: 2.5rem;
   line-height: 1px;
   text-align: center;
   color: var(--black);
@@ -611,13 +623,13 @@ section {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 3rem;
-  padding-left: 30px;
+  padding-left: 90px;
   margin-top: 130px;
   padding-bottom: 70px;
 }
 
 .contact-text h2 {
-  font-size: 52px;
+  font-size: 2.5rem;
   line-height: 1;
   text-align: center;
   color: var(--black);
@@ -769,13 +781,15 @@ form textarea {
 
 .projects {
   text-align: center;
-  padding: 50px 0;
+  padding: 90px;
 }
 
 .projects h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 3rem;
   color: var(--black);
+  width: 100%;
+  text-align: center;
 }
 
 .projects p {
@@ -872,13 +886,16 @@ form textarea {
 /* cetifcations css style sheets */
 .certifications {
   text-align: center;
-  padding: 50px 0;
+  padding: 90px
 }
 
 .certifications h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #333;
+  margin-bottom: 3rem;
+  color: var(--black);
+  width: 100%;
+  text-align: center;
+
 }
 
 .certifications p {
