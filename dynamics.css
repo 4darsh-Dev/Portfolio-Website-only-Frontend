@@ -108,3 +108,27 @@
   animation: showText 0.5s 1s linear forwards;
   opacity: 0;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Add animation to image */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.bouncing {
+  animation: bounce 2s ease-in-out infinite;
+}
