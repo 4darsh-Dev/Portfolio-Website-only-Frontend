@@ -254,7 +254,8 @@ body {
   font-size: 16px;
   letter-spacing: 1.5;
   line-height: 1.5;
-  color: var(--black);
+  color: var(--dark-gray);
+
 }
 
 .s-container {
@@ -520,7 +521,7 @@ section {
   transform: translateX(-50px);
   font-size: 16px;
   font-weight: 500;
-  color: var(--white);
+  color: var(--black);
   font-family: sans-serif, monospace;
   /* font-weight: 600; */
 }
@@ -794,9 +795,10 @@ form textarea {
 
 .projects p {
   font-size: 1.1rem;
-  color: #777;
+  color: var(--dark-gray);
   line-height: 1.5;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  font-family: var(--sans);
 }
 
 .project-container {
@@ -806,7 +808,7 @@ form textarea {
 }
 
 .project-card {
-  width: 300px;
+  width: 450px;
   background-color:var(--white);
   box-shadow: 0 5px 10px var(--gray);
   margin: 10px;
@@ -817,7 +819,7 @@ form textarea {
 
 .project-card img {
   width: 100%;
-  height: 200px;
+  height: 240px;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
@@ -836,15 +838,17 @@ form textarea {
 .project-card p {
   padding: 0 15px 15px;
   font-size: 0.9rem;
-  color: #777;
+  color: var(--dark-gray);
   line-height: 1.5;
 }
 
 .project-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 3rem;
   padding: 10px 15px 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--gray);
+  padding-bottom: 20px;
 }
 
 .project-links a {
@@ -854,7 +858,10 @@ form textarea {
 }
 
 .project-links a:hover {
-  color: var(--blue);
+  color: var(--white) !important;
+  background-color: var(--black);
+  box-shadow: none;
+
 }
 
 /* Add animation to project cards */
