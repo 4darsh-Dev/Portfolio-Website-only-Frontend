@@ -942,14 +942,16 @@ form textarea {
 .certification-card h3 {
   padding: 20px 15px;
   font-size: 1.2rem;
-  color: #333;
+  color: var(--black);
   margin-bottom: 10px;
+  font-family: var(--mono-head);
 }
 
 .certification-card p {
+  font-family: var(--sans);
   padding: 0 15px 15px;
   font-size: 0.9rem;
-  color: #777;
+  color: var(--dark-gray);
   line-height: 1.5;
 }
 
@@ -960,13 +962,16 @@ form textarea {
 
 /* Add animation to certification links */
 .certification-card a {
-  color: #333;
+  color: var(--white);
   text-decoration: none;
   transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  margin: 0 0 24px 0;
+
 }
 
 .certification-card a:hover {
-  color: #007bff;
+  background-color: var(--black);
+
   transform: scale(1.1);
 }
 
