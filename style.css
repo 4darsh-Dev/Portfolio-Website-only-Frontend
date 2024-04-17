@@ -74,7 +74,7 @@ header {
   display: inline-flex;
   flex-direction: row;
   position: relative;
-  left: 23rem;
+  left: 14rem;
 }
 .menu-list li a {
   font-size: 18px;
@@ -632,7 +632,7 @@ section {
 .contact-text h2 {
   font-size: 2.5rem;
   line-height: 1;
-  text-align: center;
+  /* text-align: center; */
   color: var(--black);
   margin-bottom: 30px;
 }
@@ -971,7 +971,7 @@ form textarea {
 
 .certification-card a:hover {
   background-color: var(--black);
-
+  box-shadow: none;
   transform: scale(1.1);
 }
 
