@@ -629,6 +629,17 @@ section {
   padding-bottom: 70px;
 }
 
+.contact h3{
+  font-size: 32px;
+  font-family: var(--mono-head);
+}
+.contact-h3-link{
+  color: var(--blue);
+  text-decoration: none;
+}
+.contact-h3-link:hover{
+  color: var(--red) !important;
+}
 .contact-text h2 {
   font-size: 2.5rem;
   line-height: 1;

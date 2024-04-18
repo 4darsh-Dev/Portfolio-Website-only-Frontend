@@ -34,6 +34,10 @@
   .me {
     color: aliceblue;
   }
+  .contact h3{
+    font-size: 28px;
+    
+  }
   .prof-img {
     max-width: 35vw;
     top: 8vh;
@@ -359,6 +363,10 @@
   .school{
     width: 80%;
     padding: 1.5rem ;
+  }
+  .contact h3{
+    font-size: 22px;
+
   }
   
 }
