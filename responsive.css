@@ -346,6 +346,23 @@
     font-size: 2rem;
 
   }
+
+  .education{
+    padding: 12px;
+
+  }
+  .education h2{
+    font-size: 2rem;
+
+  }
+
+  .school{
+    width: 80%;
+    padding: 1.5rem ;
+  }
+  .school-list{
+    position: relative;
+  }
 }
 
 

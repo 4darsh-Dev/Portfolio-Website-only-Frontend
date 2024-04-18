@@ -625,7 +625,7 @@ section {
   align-items: center;
   gap: 3rem;
   padding-left: 90px;
-  margin-top: 130px;
+  margin-top: 70px;
   padding-bottom: 70px;
 }
 
@@ -987,5 +987,105 @@ form textarea {
     width: calc(100% - 20px);
   }
 }
+
+/* Style the education section */
+.education {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 90px;
+
+}
+
+/* Style the school titles */
+.education h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--black);
+  /* text-transform: uppercase; */
+  animation: title-fadeIn 1s ease-in-out forwards;
+
+}
+
+/* Animation for title fade in */
+@keyframes title-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Style the school details container */
+.school {
+  margin: 2rem 0;
+  padding: 3rem;
+  /* border: 1px solid var(--dark-gray); */
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 0 10px var(--gray);
+  box-shadow: 0 0 25px var(--dark-gray);
+  transition: all 0.3s ease-in-out;
+  width: 90%;
+
+}
+
+/* Apply hover effect to school details container */
+.school:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px var(--black);
+}
+
+/* Style the school name */
+.school h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--blue);
+  font-family: var(--mono-head);
+}
+.school p{
+  
+  color: var(--black);
+  font-family: var(--mono);
+  margin: 12px 0;
+
+
+}
+/* Style the school description list */
+.school ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.school-para2{
+  color: var(--dark-gray) !important;
+  font-family: var(--sans) !important;
+}
+
+/* Style the list items */
+.school ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  opacity: 0;
+  animation: list-fadeIn 0.5s ease-in-out forwards;
+  animation-delay: 0.2s;
+  font-family: var(--sans);
+  color: var(--dark-gray);
+
+}
+
+/* Animation for list item fade in */
+@keyframes list-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 
