@@ -164,8 +164,10 @@
     box-shadow: none;
   }
   .about-img img {
-    width: 15rem;
-    left: 20px;
+    width: 80vw;
+    left: 0;
+    right: 0;
+    
   }
   .about-text{
     padding-right: 0;
@@ -205,13 +207,13 @@
     padding: 18vw 0 0 0;
   }
   .s-box-1-ins h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .s-box-1-ins h3 span {
-    font-size: 16px;
+    font-size: 20px;
   }
   .s-box-1-ins h1 {
-    font-size: 22px;
+    font-size: 32px;
   }
   .about {
     grid-gap: 0.5rem;
@@ -254,7 +256,11 @@
     display: inline-block;
   }
   .about-img {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+
   }
   .about-text h2 {
     font-size: 32px;
@@ -326,6 +332,12 @@
   }
   .services-list div {
     padding: 25px;
+  }
+  .services-list div h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--blue);
+
   }
   .projects{
     padding: 50px 12px;
