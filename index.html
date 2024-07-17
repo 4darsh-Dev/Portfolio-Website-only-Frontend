@@ -63,6 +63,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dynamics.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="shapes.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -87,13 +88,21 @@
                 <li><a class="font-ss" href="#services">Services</a></li>
                 <li><a class="font-ss" href="#skills">Skills</a></li>
                 <li><a class="font-ss" href="#projects">Projects</a></li>
-                <li><a class="font-ss" href="#achievements">Achievements</a></li>
+                <!-- <li><a class="font-ss" href="#achievements">Achievements</a></li> -->
                 
                 <li><a class="font-ss" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main >
+        <div class="shapes">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+            <div class="shape shape3"></div>
+            <div class="shape shape8"></div>
+
+        </div>
+        
         <div id="home" class="container main-bg-2">
             <div class="sub-box">
                 <div class="s-box-1">
@@ -127,14 +136,21 @@
                 </div>
                 <div class="s-box-2">
                     <div class="img-box">
-                        <img class="prof-img" src="img/home-gif.gif"
-                            alt="Coder Background image">
+                        <!-- <img class="prof-img" src="img/home-gif.gif"
+                            alt="Coder Background image"> -->
+
+                            <video autoplay loop class="prof-img">
+                                <source src="img/home-gif.webm" type="video/webm">
+                                Video unsupported
+                              </video>
+
+                        
                     </div>
                 </div>
             </div>
             <section class="about" id="about">
                 <div class="about-img">
-                    <img src="img/adarsh-maurya-new-final-main.jpg" alt="Adarsh Maurya - Web Developer and Programmer">
+                    <img src="img/adarsh-maurya-new-final-main.webp" alt="Adarsh Maurya - Web Developer and Programmer">
 
                 </div>
                 <div class="about-text">
@@ -150,45 +166,34 @@
                     </p>
                 </div>
             </section>
-            <section>
-                <div class="services" id="services">
-                    <div class="s-container">
-                        <h1 class="sub-title font-head">My <span>Services</span></h1>
-                        <div class="services-list">
-                            <div>
-                                <i class='bx bx-code' style='color:var(--blue)'></i>
-                                <h2 class="font-head">Web Dev</h2>
-                                <p class="font-ss"> Create powerful and visually stunning websites tailored to your
-                                    unique needs. Our expert team combines cutting-edge technology with seamless
-                                    functionality to deliver an exceptional online experience. Boost your online
-                                    presence today!
-                                    <a href="#" class="read">Learn more</a>
-                                </p>
-                            </div>
-                            <div>
-                                <i class='bx bxs-book-content' style='color:var(--blue)'></i>
-                                <h2 class="font-head">Content Writing</h2>
-                                <p class="font-ss">Transform your ideas into captivating content that engages and
-                                    converts. Our skilled writers craft persuasive and SEO-friendly articles, blog
-                                    posts, and website copy that resonate with your audience. Elevate your brand's voice
-                                    and stand out.
-                                    <a href="#" class="read">Learn more</a>
-                                </p>
-                            </div>
-                            <div>
-                                <i class='bx bxl-apple' style='color:var(--blue)'></i>
-                                <h2 class="font-head">UI/UX Design</h2>
-                                <p class="font-ss">Enhance user satisfaction and drive conversions with our intuitive
-                                    and visually appealing designs. We create seamless user experiences that blend
-                                    aesthetics and functionality. Leave a lasting impression on your visitors and unlock
-                                    your digital potential.
-                                    <a href="#" class="read">Learn more</a>
-                                </p>
-                            </div>
+            
+            <section id="services">
+                <div class="services-container">
+                    <h1 class="sub-title font-head">My <span>Services</span></h1>
+                    <div class="services-list">
+                        <div class="service-card" data-tilt>
+                            <i class='bx bx-code' style='color:var(--blue)'></i>
+                            <h2 class="font-head">Web Dev & APIs</h2>
+                            <p class="font-ss">Creating Modern Websites Frontend using HTML, CSS, JavaScript and ReactJS. Powerful RESTful API's using python high level Django Rest Framework (DRF) with SQL based databases like MySQL, PostgreSQL, etc. For Web Apps and E-commerce platforms using Django and DRF with ReactJS.</p>
+                            <a href="#" class="read">Learn more</a>
+                        </div>
+                        <div class="service-card" data-tilt>
+                            <i class='bx bxs-brain' style='color:var(--blue)'></i>
+                            <h2 class="font-head">Gen AI Apps</h2>
+                            <p class="font-ss">Harness the power of AI to Create Chatbots, LLM Applications, Recommendation Systems, Personal Assistant empowering your Business. Creating chatbot based on Retrieval Augmented Generation (RAG) using modern tools like Vector Databases, langchain and HuggingFace Models(BERT, Llama) and OpenAI.</p>
+                            <a href="#" class="read">Learn more</a>
+                        </div>
+                        <div class="service-card" data-tilt>
+                            <i class='bx bxl-apple' style='color:var(--blue)'></i>
+                            <h2 class="font-head">UI/UX Design</h2>
+                            <p class="font-ss">Enhance user satisfaction and drive conversions with our intuitive and visually appealing designs using Figma, Canva, and other modern AI tools. Create wireframes, mockups, and prototypes for websites and mobile apps.</p>
+                            <a href="#" class="read">Learn more</a>
                         </div>
                     </div>
                 </div>
             </section>
+
+
 
             <h1 class="sub-title font-head">My <span>Skills🎯</span></h1>
             <section>
@@ -297,7 +302,29 @@
                 <h2 class="font-head">Latest <span>Projects <i class='bx bxs-rocket'></i></span></h2>
 
                 <div class="project-container">
-                    <div class="project-card">
+                    <div class="project-card" data-tilt>
+                        <img src="img/cogniguard-cert.webp" alt="CogniGuard">
+                        <h3>CogniGuard </h3>
+                        <p>A web extension for detecing and combatting dark patterns on various websites, particularly focusing on E-commerce platforms. Ensuring users a transparent and ethical online experience. Powered by a Django API containing Fine-Tuned BERT (LLM) on dark-pattern labelled textual-data. Features include Chrome Web Extension, Django API, Crowdsource Database for Dark Pattern Reports.</p>
+                            <p><b>Tech Stack: </b>HTML, CSS, JavaScript, Django, DRF(API), PyTorch, HuggingFace, Deep Learning , Transformers, Python-NLTK, MySQL, Reddis-server, celery, PostgreSQL</p>
+                        <div class="project-links">
+
+                            <a target="_blank" href="https://github.com/4darsh-Dev/CogniGaurd" class="btn-box font-ss">GitHub </a>
+                            <a target="_blank" href="https://cogniguard.onionreads.com/" class="btn-box font-ss">Live </a>
+                        </div>
+                    </div>
+                    <div class="project-card" data-tilt>
+                        <img src="img/medicure-cert.webp" alt="Medicure RAG Chatbot">
+                        <h3>Medicure RAG Chatbot</h3>
+                        <p>A Medical assitant Chatbot using Retrieval Augmented Generation powered by Meta Llama2-7b LLM quantized Model. The Web App is built using streamlit and deployed on huggingface hub spaces. Uses Pinecone Vector database, langchain and Setence-transformers embedding model. </p>
+                        <p><b>Tech Stack: </b>Python, Pincecone, Langchain, Llama (LLM) PyTorch, Transformers, Hugging Face API,Deep Learning, Natural Language Processing>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/4darsh-Dev/medicure-rag-chatbot/" class="btn-box font-ss">GitHub </a>
+                            <a target="_blank" href="https://huggingface.co/spaces/4darsh-Dev/medicure" class="btn-box font-ss">Live</a>
+                            
+                        </div>
+                    </div>
+                    <div class="project-card" data-tilt>
                         <img src="img/project-muskanai.webp" alt="MuskanAi">
                         <h3>MuskanAi</h3>
                         <p>A digital assitant which has full automation capabilties of Nautral Language Understanding and speech input and output along with Emotional Intelligence and Web Browsing also perform day to day activities like Sending message,answering calls, etc. Uses Fine-Tuned Deep Learning Large Languae Model (LLMs) for Emotional Understading and Question Answering.</p>
@@ -308,31 +335,32 @@
                             
                         </div>
                     </div>
-                    <div class="project-card">
-                        <img src="img/project-cogniguard.webp" alt="CogniGuard">
-                        <h3>CogniGuard </h3>
-                        <p>A web extension for detecing and combatting dark patterns on various websites, particularly focusing on E-commerce platforms. Ensuring users a transparent and ethical online experience. Powered by a Django API containing Fine-Tuned BERT (LLM) on dark-pattern labelled textual-data. Features include Chrome Web Extension, Django API, Crowdsource Database for Dark Pattern Reports.</p>
-                            <p><b>Tech Stack: </b>HTML, CSS, JavaScript, Django, DRF(API), PyTorch, HuggingFace, Deep Learning , Transformers, Python-NLTK, MySQL</p>
+                    <div class="project-card" data-tilt>
+                        <img src="img/solve-ease-cert.webp" alt="Solve-Ease">
+                        <h3>Solve-Ease Website</h3>
+                        <p>A FrontEnd website for Solve-Ease Community with home, about, contact, testimonials and Other pages. It is built using modern JS libraries like AOS(Aniamte on scroll), Anime.js and three.js for 3D components. </p>
+                        <p><b>Tech Stack: </b>HTML, SASS, JavaScript, ReactJS, Github Actions</p>
                         <div class="project-links">
-
-                            <a target="_blank" href="https://github.com/4darsh-Dev/CogniGaurd" class="btn-box font-ss">GitHub </a>
-                            <a target="_blank" href="#" class="btn-box font-ss">Devfolio </a>
+                            <a target="_blank" href="https://github.com/solve-ease/official-website" class="btn-box font-ss"> GitHub </a>
+                            <a target="_blank" href="https://solve-ease.github.io/official-website/" class="btn-box font-ss">Live </a>
+                            
                         </div>
                     </div>
-                    <div class="project-card">
-                        <img src="img/project-nyasarathi.jpeg" alt="NyaySarathi Web">
+                    
+                    <div class="project-card" data-tilt>
+                        <img src="img/nyaysarathi-cert.webp" alt="NyaySarathi Web">
                         <!-- <img src="candid-connect.jpg" alt="Candid Connect"> -->
                         <h3>NyaySarathi</h3>
                         <p>A web platform for spreading legal awareness powered by AI chatbot built using OpenAI API and a crowdsource database for user response collection.User Auth System, Chat History and Contact Form.</p>
                         <p><b>Tech Stack: </b>HTML, CSS, JavaScript, Django, Python, OpenAI API, MySQL, GuniCorn, Nginx, AWS EC-2</p>
                         <div class="project-links">
 
-                            <a target="_blank" href="https://github.com/4darsh-Dev/NyaySarathi" class="btn-box font-ss">GitHub </a>
-                            <a target="_blank" href="#" class="btn-box font-ss">Devfolio</a>
+                            <a target="_blank" href="https://github.com/4darsh-Dev/NyaySarathi/" class="btn-box font-ss">GitHub </a>
+                            <a target="_blank" href="https://nyay-sarathi.vercel.app" class="btn-box font-ss">Live</a>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <img src="img/project-flavormaster.jpeg" alt="FlavorMaster Web">
+                    <div class="project-card" data-tilt>
+                        <img src="img/flavormaster-cert.webp" alt="FlavorMaster Web">
                         <!-- <img src="candid-connect.jpg" alt="Candid Connect"> -->
                         <h3>FlavorMaster</h3>
                         <p>A web platform for finding recipes with their details such as preparation time, ingredients ,etc. Include About, Contact and Services Page </p>
@@ -340,11 +368,11 @@
                         <div class="project-links">
 
                             <a target="_blank" href="https://github.com/4darsh-Dev/recipe-Chatbot-web" class="btn-box font-ss">GitHub </a>
-                            <a target="_blank" href="#" class="btn-box font-ss">Devfolio</a>
+                            <a target="_blank" href="https://flavormaster-web.vercel.app" class="btn-box font-ss">Live</a>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <img src="img/project-ayur-vichar.jpeg" alt="Ayurvichar Web">
+                    <div class="project-card" data-tilt>
+                        <img src="img/ayurvichar-cert.webp" alt="Ayurvichar Web">
                         <!-- <img src="candid-connect.jpg" alt="Candid Connect"> -->
                         <h3>Ayurvichar</h3>
                         <p>A web platform for finding Phenotype of a person as per Ayurveda Tridosha theory(Vatta+Kappa+Pitta) and suggesting lifestyle according to their phenotype to cure diseases and promote healthy living.</p>
@@ -355,20 +383,21 @@
                             
                         </div>
                     </div>
-                    <div class="project-card">
-                        <img src="img/project-doctor.jpeg" alt="Doctor Portfolio">
+                    <div class="project-card" data-tilt>
+                        <img src="img/jyoti-maurya-cert.webp" alt="Doctor Portfolio">
                         <!-- <img src="candid-connect.jpg" alt="Candid Connect"> -->
                         <h3>Doctor's Portfolio</h3>
                         <p>A medical professional portfolio website containing about section, Blog Post (from WordPres) and Contact Form.</p>
                         <p><b>Tech Stack: </b>HTML, CSS, JavaScript</p>
                         <div class="project-links">
-                            <a target="_blank" href="https://devfolio.co/projects/portfolio-medical-student-dd74" class="btn-box font-ss">Devfolio</a>
+                            
                             <a target="_blank" href="https://github.com/4darsh-Dev/portfolio-Doctor" class="btn-box font-ss">GitHub </a>
+                            <a target="_blank" href="https://jyotimaurya.onionreads.com/" class="btn-box font-ss">Live</a>
                             
                         </div>
                     </div>
-                    <div class="project-card">
-                        <img src="img/project-music-player.jpeg" alt="EricMusic Web">
+                    <div class="project-card" data-tilt>
+                        <img src="img/ericmusic-cert.webp" alt="EricMusic Web">
                         <!-- <img src="candid-connect.jpg" alt="Candid Connect"> -->
                         <h3>EricMusic</h3>
                         <p>A music player website named Eric Music.</p>
@@ -382,40 +411,31 @@
                 </div>
             </section>
             <!-- Education section for the protfolio -->
-            <section class="education">
-                <h2 class="font-head">My <span>Education <i class='bx bx-code-alt'></i></span></h2>
-
-                <div class="school">
-                  <h3>Keshav Mahavidyalaya (University of Delhi)</h3>
-                  <p>Bachelor of Science in Computer Science Honors<br>
-                  September 2023 - July 2027</p>
-                  
-                    <p class="school-para2">Learned C++ and Python Programming languages and core computer science concepts.</p>
-                    <p class="school-para2">Particpated in various Hackathons such as 🔹 Smart India Hackathon (SIH), 2023
-                        🔹 hackCBS6.0, 2023
-                        🔹 HackwithMAIT4.0, 2023
-                        🔹 Dark Pattern Buster Hackathon (DPBH), 2023
-                        🔹 hackJNU3.0, 2024</p>
-                 
-                </div>
-                <div class="school">
-                  <h3>Central Hindu Boys School BHU, Varanasi</h3>
-                  <p>Schooling</p>
-               
-                    <p class="school-para2">Stream : Physics, Chemistry, Mathematics</p>
-                    <p class="school-para2">Acheived 95.5% in CBSE X Boards.</p>
-                    <p class="school-para2">Participated in CodeX Fenestra '23 by DPS Varansi.</p>
-
-                
-                </div>
-              </section>
+            
               
 
             <section id="achievements" class="certifications">
+                
 
                 <h2 class="font-head">My <span>Certifcates <i class='bx bxs-bookmark-star'></i></span></h2>
-                <div class="certification-container">
-                    <div class="certification-card">
+                <div id="cert-contain" class="certification-container">
+                    <div  class="certification-card">
+                        <img src="img/dpbh-round2-cert.webp" alt="DPBH 2023 ">
+                        <h3>Certificate of Appreciaton DPBH</h3>
+                        <p>Worked on Project CogniGuard and built a Solution for Dark pattern Detection using Web and Deep Learning Technologies. Dark Pattern Buster Hackathon 2023 was organized by Ministry of Consumer Affairs and IITBHU. </p>
+                        
+                        <a target="_blank" href="https://onionreads.com/wp-content/uploads/2024/07/Round-2-Appreciation-Certficate-251-475-page159.pdf"
+                            class="btn-box font-ss">View</a>
+                    </div>
+                    <div  class="certification-card">
+                        <img src="img/genai-cert.webp" alt="Generative Ai Inueron">
+                        <h3>Foundational Generative AI by Ineuron.ai</h3>
+                        <p>Learnt Foundational Gen AI and Deep Learning Neural networks, OpenAI API, LLMs , Huggingface, Langchain, Vector Databases like Pinecone and ChromaDB, Retrieval Augmented Generation, LLama2(llm)  and build real world projects.  </p>
+                        
+                        <a target="_blank" href="https://learn.ineuron.ai/certificate/2ed04f73-39fc-4e19-aa24-265e81b94a43"
+                            class="btn-box font-ss">View</a>
+                    </div>
+                    <div  class="certification-card">
                         <img src="img/cert-harvard.jpeg" alt="Havard University CS50">
                         <h3>CS50x Certificate by Harvad University</h3>
                         <p>It taught me about SQL, Data Structures, Python (Programming Language), Flask ,Algorithms , C
@@ -463,6 +483,34 @@
                 </div>
             </section>
 
+            <section class="education">
+                <h2 class="font-head">My <span>Education <i class='bx bx-code-alt'></i></span></h2>
+
+                <div class="school">
+                  <h3>Keshav Mahavidyalaya (University of Delhi)</h3>
+                  <p>Bachelor of Science in Computer Science Honors<br>
+                  September 2023 - July 2027</p>
+                  
+                    <p class="school-para2">Learned C++ and Python Programming languages and core computer science concepts.</p>
+                    <p class="school-para2">Particpated in various Hackathons such as 🔹 Smart India Hackathon (SIH), 2023
+                        🔹 hackCBS6.0, 2023
+                        🔹 HackwithMAIT4.0, 2023
+                        🔹 Dark Pattern Buster Hackathon (DPBH), 2023
+                        🔹 hackJNU3.0, 2024</p>
+                 
+                </div>
+                <div class="school">
+                  <h3>Central Hindu Boys School BHU, Varanasi</h3>
+                  <p>Schooling</p>
+               
+                    <p class="school-para2">Stream : Physics, Chemistry, Mathematics</p>
+                    <p class="school-para2">Acheived 95.5% in CBSE X Boards.</p>
+                    <p class="school-para2">Participated in CodeX Fenestra '23 by DPS Varansi.</p>
+
+                
+                </div>
+              </section>
+
             <section class="contact" id="contact">
                 <div class="contact-text">
                     <h2 class="font-head">Contact <span>Me</span></h2>
@@ -487,13 +535,12 @@
 
 
                     <div class="contact-links">
-                        <a target="_blank" href="https://www.linkedin.com/in/adarsh-maurya-09343a262/"><i
+                        <a target="_blank" href="https://www.linkedin.com/in/adarsh-maurya-dev/"><i
                                 class='bx bxl-linkedin'></i></a>
                         <a href="https://github.com/4darsh-Dev" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a target="_blank" href="https://www.facebook.com/people/Onion-Reads/100089856034775"><i
-                                class='bx bxl-facebook'></i></a>
-                        <a target="_blank" href="#"><i class='bx bxl-instagram'></i></a>
-                        <a target="_blank" href="https://twitter.com/OnionReads"><i class='bx bxl-twitter'></i></a>
+                        <a target="_blank" href="https://www.kaggle.com/adarshm09"> <img style="width: 12px;" src="/img/kaggle-brands-solid.svg" alt="k"></a>
+                        <a target="_blank" href="https://www.instagram.com/its_adarsh.me/"><i class='bx bxl-instagram'></i></a>
+                        <a target="_blank" href="https://twitter.com/4darsh_Dev"><i class='bx bxl-twitter'></i></a>
 
 
 
@@ -517,10 +564,18 @@
                 </div>
 
 
-                <a href="#" class="top"> <i class='bx bx-up-arrow-alt'></i></a>
+            
+                <button id="back-to-top" class="back-to-top">
+                    <svg class="progress-ring" width="50" height="50">
+                        <circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="20" cx="25" cy="25"/>
+                    </svg>
+                    <i class='bx bx-up-arrow-alt'></i>
+                </button>
             </section>
 
         </div>
+        <div class="cursor-outer"></div>
+<div class="cursor-inner"></div>
     </main>
     <footer>
         <div class="last-text main-bg-1">
@@ -528,7 +583,14 @@
             </p>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="/script.js"></script>
+    <script src="/animations.js"></script>
+    <script src="/shapes.js"></script>
+    <script src="/projects.js"></script>
+    <script src="/certificates.js"></script>
+    
 </body>
 
 </html>

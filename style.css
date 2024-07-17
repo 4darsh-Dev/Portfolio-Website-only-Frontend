@@ -8,7 +8,7 @@
   --yellow: #fdb128;
   --white: #fff7fc;
   --gray: #d0cdd7;
-  --dark-gray: #868e96 ;
+  --dark-gray: #47494a ;
   --black: #171321;
   --light-pink: #ff71cd;
   --base-font-size: 1.3rem;
@@ -74,7 +74,7 @@ header {
   display: inline-flex;
   flex-direction: row;
   position: relative;
-  left: 14rem;
+  left: 21rem;
 }
 .menu-list li a {
   font-size: 18px;
@@ -89,6 +89,7 @@ header {
 }
 body {
   background-color: var(--white);
+  cursor: none;
 }
 .logo {
   font-size: 24px;
@@ -262,11 +263,106 @@ body {
   padding: 90px;
 }
 
-#services {
+ /* services css  */
+ #services {
   color: var(--black);
   font-size: 18px;
   line-height: 1.4rem;
-  margin-bottom: 4rem;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+  color: var(--black);
+  margin-bottom: 2rem;
+}
+
+.sub-title span {
+  color: var(--blue);
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.service-card {
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.service-card i {
+  font-size: 46px;
+  margin-bottom: 30px;
+  color: var(--blue);
+}
+
+.service-card h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--black);
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.read {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--blue);
+  border-radius: 40px;
+  font-size: 16px;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.read:hover {
+  background: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.service-card {
+  animation: float 6s ease-in-out infinite;
+}
+
+.service-card:nth-child(2) {
+  animation-delay: -2s;
+}
+
+.service-card:nth-child(3) {
+  animation-delay: -4s;
 }
 
 .sub-title {
@@ -279,6 +375,16 @@ body {
 .sub-title span {
   color: var(--blue);
 }
+
+
+/* 
+#services {
+  color: var(--black);
+  font-size: 18px;
+  line-height: 1.4rem;
+  margin-bottom: 4rem;
+}
+
 
 .services-list {
   display: grid;
@@ -321,12 +427,12 @@ body {
   letter-spacing: 1px;
   text-decoration: none;
   font-weight: 600;
-  /* opacity: 0; */
+  /* opacity: 0; 
   box-shadow: 0 0 5px var(--blue);
 }
 .read:hover {
   box-shadow: 0 0 20px var(--blue);
-}
+} */
 
 section {
   display: flex;
@@ -844,6 +950,8 @@ form textarea {
   font-size: 1.2rem;
   color: #333;
   margin-bottom: 10px;
+  font-family: sans-serif, monospace;
+  font-weight: 600;
 }
 
 .project-card p {
@@ -1096,6 +1204,92 @@ form textarea {
   to {
     opacity: 1;
   }
+}
+
+
+
+/* back to top button css  */
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(100px);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background-color:var(--blue);
+}
+
+.progress-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress-ring__circle {
+  transition: stroke-dashoffset 0.3s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.back-to-top i {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* custom curosr css  */
+
+.cursor-outer,
+.cursor-inner {
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease-in-out,
+                height 0.3s ease-in-out,
+                opacity 0.3s ease-in-out;
+}
+
+.cursor-outer {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(125, 105, 105, 0.906);
+    z-index: 12000;
+}
+
+.cursor-inner {
+    width: 12px;
+    height: 12px;
+    background-color: var(--blue);
+    z-index: 12001;
+    transition: width 0.1s ease-in-out,
+                height 0.1s ease-in-out;
+}
+
+/* Optional: change cursor appearance when hovering over links */
+a:hover ~ .cursor-outer {
+    border-color: #fff;
+}
+
+a:hover ~ .cursor-inner {
+    background-color: #fff;
 }
 
 
