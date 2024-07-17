@@ -1,0 +1,130 @@
+/* css for animated shapes */
+
+.shapes {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    z-index: 0;
+  }
+  
+  .shape {
+    position: absolute;
+    opacity: 0.5;
+  }
+  
+  .shape1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    top: 25%;
+    left: 10%;
+  }
+  
+  .shape2 {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(120deg, #84fab0 0%, var(--blue) 100%);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    top: 20%;
+    right: 15%;
+  }
+  
+  .shape3 {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    border-radius: 50%;
+    bottom: 20%;
+    left: 42%;
+  }
+  
+  .shape4 {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(
+      to right,
+      #ff8177 0%,
+      #ff867a 0%,
+      #ff8c7f 21%,
+      #f99185 52%,
+      #cf556c 78%,
+      #b12a5b 100%
+    );
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+    top: 50%;
+    right: 30%;
+  }
+  
+  .shape5 {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    border-radius: 30% 70% 46% 54% / 30% 30% 70% 70%;
+    bottom: 10%;
+    right: 10%;
+  }
+  
+  .shape6 {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #fccb90 0%, #d57eeb 100%);
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+    top: 40%;
+    left: 25%;
+  }
+  
+  .shape7 {
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(
+      to right,
+      #f78ca0 0%,
+      #f9748f 19%,
+      #fd868c 60%,
+      #fe9a8b 100%
+    );
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    top: 60%;
+    left: 5%;
+  }
+  
+  .shape8 {
+    width: 85px;
+    height: 85px;
+    background: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+    border-radius: 50%;
+    bottom: 5%;
+    right: 25%
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-content {
+      padding-right: 0;
+      margin-bottom: 2rem;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  }
