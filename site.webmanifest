@@ -1,0 +1,75 @@
+{
+    "name": "Adarsh Maurya | Web Developer and Programmer",
+    "short_name": "Adarsh Maurya",
+    "description": "Professional portfolio of Adarsh Maurya, a skilled web developer specializing in creating dynamic and user-friendly websites and applications.",
+    "start_url": "/?source=pwa",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4285f4",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "/img/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/img/icon-256x256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/icon-384x384.png",
+        "sizes": "384x384",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "/img/screenshot1.png",
+        "sizes": "1280x720",
+        "type": "image/png",
+        "platform": "wide",
+        "label": "Adarsh Maurya Portfolio Homepage"
+      },
+      {
+        "src": "/img/screenshot2.png",
+        "sizes": "1280x720",
+        "type": "image/png",
+        "platform": "wide",
+        "label": "Projects Showcase"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Projects",
+        "short_name": "Projects",
+        "description": "View my web development projects",
+        "url": "/projects",
+        "icons": [{ "src": "/img/projects-icon.png", "sizes": "96x96" }]
+      },
+      {
+        "name": "Contact",
+        "short_name": "Contact",
+        "description": "Get in touch with Adarsh Maurya",
+        "url": "/contact",
+        "icons": [{ "src": "/img/contact-icon.png", "sizes": "96x96" }]
+      }
+    ],
+    "related_applications": [
+      {
+        "platform": "webapp",
+        "url": "https://adarsh.solveease.tech/manifest.json"
+      }
+    ],
+    "prefer_related_applications": false,
+    "categories": ["business", "productivity", "developer tools", "portfolio"],
+    "lang": "en-US",
+    "dir": "ltr"
+  }
