@@ -1,2 +1,47 @@
+# robots.txt for https://adarsh.solveease.tech
+
 User-agent: *
-Disallow: /img/home-gif.gif
+Allow: /
+Allow: /index.html
+Allow: /img/
+Allow: /projects/
+Allow: /blog/
+Allow: /about/
+Allow: /contact/
+Allow: /css/
+Allow: /js/
+
+# Disallow development or private areas
+Disallow: /dev/
+Disallow: /temp/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /drafts/
+Disallow: /*?*
+Disallow: /*.php$
+
+# Prevent media duplication indexing
+Disallow: /*?lightbox
+Disallow: /*&lightbox
+Disallow: /*?share
+Disallow: /*&share
+
+# Limit crawl rate for specific bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+# Additional search engines
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /img/
+
+User-agent: Yandexbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://adarsh.solveease.tech/sitemap.xml
