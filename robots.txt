@@ -1,4 +1,4 @@
-# robots.txt for https://adarsh.solveease.tech
+# robots.txt for https://adarshmaurya.solveease.tech
 
 User-agent: *
 Allow: /
@@ -44,4 +44,4 @@ User-agent: Yandexbot
 Allow: /
 
 # Sitemap location
-Sitemap: https://adarsh.solveease.tech/sitemap.xml
+Sitemap: https://adarshmaurya.solveease.tech/sitemap.xml
